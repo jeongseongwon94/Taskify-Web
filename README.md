@@ -96,27 +96,10 @@
 ![내 정보 페이지](https://github.com/jeongseongwon94/Taskify-Web/assets/148832721/ae1c4300-6948-4ae7-abb8-13831ae3569d)
 
 
-## Contributor
-#### [jeongseongwon94](https://github.com/jeongseongwon94)
+## 프로젝트 내 기여도
 - 내 대시보드 페이지 구현
 - 할일 생성/수정 모달 구현
 - 메인/서브 헤더 구현
-#### [nakyoung98](https://github.com/nakyoung98)
-- 대시보드 페이지 구현
-- 사이드바 구현
-- 컬럼 관리 모달 구현
-- 컬럼 provider 구현
-
-#### [SeanKim-416](https://github.com/SeanKim-416)
-- 메인페이지 구현
-- 내 정보 페이지 구현
-- 대시보드 관리 페이지 구현
-- 대시보드 provider 구현
-- 대시보드 생성 모달 구현
-
-#### [muyahho](https://github.com/muyahho)
-- 색상 칩 컴포넌트 구현
-- 주제 칩 컴포넌트 구현
-
-#### [dahee0401](https://github.com/dahee0401)
-- 캘린더 컴포넌트 구현
+- 초대 목록 무한스크롤 구현
+- 대시보드 목록 페이지네이션 구현
+- 랜덤색상 함수 구현
