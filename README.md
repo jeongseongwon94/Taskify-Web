@@ -2,138 +2,119 @@
 <p align="center">일정 관리 서비스</p>
 
 ## 프로젝트 소개
-
-<img width="963" alt="image" src="https://github.com/SprintPart2Team10/openmind/assets/141597336/f4be09a1-7337-4cca-99ce-aa52a6b6b171">
-
+![메인소개](https://github.com/jeongseongwon94/Taskify-Web/assets/148832721/5ddbb709-ee2d-4442-a48c-06dd364142a7)
 배포 페이지 : https://taskify-jsw.vercel.app
 ## 개요
-- "무엇이든 물어보살"이라는 방송 프로그램에서 아이디어를 착안해 각 분야의 전문가에게 고민을 상담받는 컨셉의 웹 서비스입니다.
-- 원하는 전문가를 선택해 익명으로 상담을 받거나, 고민을 토로할 수 있습니다.
-
+- 프로젝트의 일정을 관리하는 사이트입니다. 
+- 프로젝트 마다 각각의 대시보드로 관리하며, 특정 멤버만을 초대하여 일정을 공유 할 수 있습니다.
 ## 주요 기능 소개
-- 고민을 상담해주는 전문가는 전문 분야를 선택한 후 닉네임을 입력하여 개인 페이지를 생성할 수 있습니다.
-- 이후에는 페이지 생성 시 부여받은 번호를 입력하면 자신의 페이지에 들어갈 수 있습니다.
-- 고민을 토로하러 온 사용자는 원하는 전문가를 선택해 익명으로 고민을 상담글을 남길 수 있습니다.
-- 전문가를 선택하는 페이지에서는 최신순, 이름순으로 전문가의 목록을 볼 수 있고, 페이지네이션 기능을 제공합니다.
-- 전문가는 남겨진 고민 상담글에 답변을 달 수 있고, 답변을 수정, 삭제, 모든 질문 리스트를 삭제하여 자신의 페이지를 초기화할 수도 있습니다.
-- 질문 상담글들은 한번에 모든 글이 보이는 것이 아니라 3개씩 모이는 무한 스크롤 기능으로 구현하였습니다.
-- 또한 원하는 전문가의 페이지의 링크를 공유할 수 있는 기능을 제공합니다.
-
+- 대시보드를 생성하여 프로젝트의 일정을 관리 할 수 있습니다.
+- 사용자는 컬럼(일정 순서)과 대시보드를 직접 커스터마이징 할 수 있고, 컬럼에 등록된 할 일 카드(일정 내용)에서 멤버들끼리 서로의 진행상황을 코멘트하며 소통할 수 있습니다.
+- 내 대시보드, 대시보드 관리 페이지를 통해 대시보드의 초대 내역을 관리 할 수 있습니다.
+- 내 정보 페이지에서는 사용자의 프로필 이미지, 닉네임, 비밀번호를 변경할 수 있습니다.
 ## 기술적 성취
-- 리액트를 사용하여, 공통적으로 쓰이는 코드를 효율적으로 작성할 수 있었습니다.
-- css module을 사용하여 className의 충돌을 방지할 수 있었습니다.
-- 웹, 모바일 등에서 불편함없이 사용할 수 있도록 반응형 웹 디자인으로 구현하였습니다.
+- Next.js의 Dynamic Routes(동적 라우팅)을 사용한 대시보드 페이지를 관리 (/dashboard/[대시보드 숫자])
+- scss를 사용한 className 충돌 방지
+- provider를 사용한 전역상태관리
 
 ## 기술 스택
 ### Language
 <div>
   <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javscript&logoColor=black">
+  <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
   <img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 </div>
 
 ### CSS
-<img src="https://img.shields.io/badge/css modules-000000?style=for-the-badge&logo=cssmodules&logoColor=white">
+<img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=Sass&logoColor=white">
 
 ### Framework
-<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white">
+<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=white">
 
 ### Collabaration tool
 <div>
-  <img src="https://img.shields.io/badge/adobe photoshop-31A8FF?style=for-the-badge&logo=adobephotoshop&logoColor=white">
   <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
   <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
   <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
   <img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
-  <img src="https://img.shields.io/badge/trello-0052CC?style=for-the-badge&logo=trello&logoColor=white">
 </div>
 
 ### Version control
 <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
 
-### Build Tool
-<img src="https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white">
-
 ### Deployment
 <img src="https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white">
 
 ## 페이지별 기능 소개
-### home page
-- 분야를 선택하고 (중복되지 않는) 닉네임을 입력하면 해당 닉네임만의 페이지가 생성됩니다.
-- 이때 API의 아이디 값과 닉네임이 로컬스토리지에 저장되어, 다시 페이지에 접근할 때는 아이디를 입력하여 자신의 페이지에 접속할 수 있습니다.
-
-![signup](https://github.com/SprintPart2Team10/openmind/assets/141597336/5d734a10-f56a-4634-830a-5288b03ca964)
-![signin](https://github.com/SprintPart2Team10/openmind/assets/141597336/7867b42f-7833-4394-8267-1bafdaafe323)
-
+### 메인 페이지, 회원가입, 로그인 페이지
+- 메인 페이지는 간단한 사이트 소개와 회원가입/로그인 페이지의 이동 기능을 제공합니다.
+- 회원가입/로그인 페이지는 입력칸이 모두 작성되어야 버튼이 활성화되며, 이메일의 중복체크 기능을 제공합니다.
+- 비밀번호 입력칸 우측에 위치한 눈동자 아이콘을 클릭하면 작성중인 비밀번호의 숨김을 on/off할 수 있습니다.
+- 회원가입/로그인 페이지를 통해 접속한 유저의 정보는 세션스토리지에 토큰으로 저장됩니다. 토큰이 확인된 유저는 내 대시보드 페이지로 이동합니다.
+![메인페이지](https://github.com/jeongseongwon94/Taskify-Web/assets/148832721/cd13787c-fbf6-46a8-8697-d30c12436136)
+![로그인페이지](https://github.com/jeongseongwon94/Taskify-Web/assets/148832721/97858943-0321-41d0-93f8-ca19abd02767)
+![회원가입페이지](https://github.com/jeongseongwon94/Taskify-Web/assets/148832721/901e1093-a985-4b3d-868d-2d8d781ac8e5)![회원가입 이메일 중복체크](https://github.com/jeongseongwon94/Taskify-Web/assets/148832721/ab73f72d-7407-4a49-9501-afffd4da9960)
 ---
 
 
-### list page
-- 고민을 털어놓으려고 방문한 사용자는 메인페이지에서 고민 털어놓기 버튼을 클릭해 리스트 페이지에 접근할 수 있습니다.
-- 리스트 페이지에서는 등록된 상담가들의 목록을 볼 수 있습니다.
-- 드롭박스를 이용해서 상담가들의 목록을 이름순, 최신순으로 정렬할 수 있습니다.
-- 페이지네이션 기능을 구현하여 1페이지 단위로, 5페이지 단위로, 마지막 페이지로, 첫 페이지로 이동할 수 있습니다.
-- 원하는 상담가의 카드를 클릭하면, 해당 상담가의 상담 페이지로 이동할 수 있습니다.
-
-![listpage](https://github.com/SprintPart2Team10/openmind/assets/141597336/a428cc04-ed8b-491f-a2dd-6845c9954edc)
-
+### 내 대시보드 페이지
+- 내 대시보드, 대시보드, 대시보드 관리, 내 정보 페이지에서는 사이드바 기능이 지원되며, 대시보드 생성과 현재 유저가 가입된 대시보드의 목록이 표시되고, 클릭 시 해당 대시보드로 이동할 수 있습니다.
+- 내 대시보드 페이지에서는 대시보드 생성, 현재 가입된 대시보드의 목록, 그리고 초대받은 대시보드 목록이 보여집니다. 대시보드생성은 모달, 내 대시보드 목록은 페이지네이션, 초대받은 대시보드 목록은 무한스크롤로 구현하였습니다.
+- 대시보드의 생성과 초대받은 대시보드 목록의 수락/거절은 기능이 동작하면 이후 목록에 실시간 반영됩니다.
+- 초대받은 대시보드 목록은 검색기능을 제공합니다.
+![내 대시보드 페이지](https://github.com/jeongseongwon94/Taskify-Web/assets/148832721/f99deba0-989c-4ca8-bbb2-4b5b5f9db979)
+![내 대시보드 기능](https://github.com/jeongseongwon94/Taskify-Web/assets/148832721/c8b12c53-6b70-4cba-9249-db59e4a05106)
 ---
 
 
-### post page
-- 상담을 받고 싶은 상담가를 선택한 후, 질문 작성하기 버튼을 클릭하면 질문을 작성할 수 있는 모달이 나타납니다.
-- 질문을 작성하면 질문 보내기 버튼이 활성화되고, 버튼을 누르면 질문이 등록됩니다.
-- 답변이 완료된 질문에는 답변 완료 배지가 표시되고, 이전에는 미답변이 표시됩니다.
-- 해당 질문이 현재 시점을 기준으로 언제 생성되었는지 표시됩니다.
-- 다른 사람의 질문과 답변에 좋아요/싫어요 버튼을 누를 수 있고, 해당 상담가의 페이지를 공유할 수도 있습니다.
-- 질문 리스트는 3개씩 무한 스크롤 기능으로 구현하였습니다.
-
-![postpage](https://github.com/SprintPart2Team10/openmind/assets/141597336/ec979655-d0e5-4965-bd59-bd3756bfa190)
-
+### 대시보드 페이지
+- 대시보드 페이지에서는 특정 멤버를 초대하거나 대시보드 관리 페이지로 이동할 수 있습니다. 대시보드가 생성되면 기본적으로 To DO, On Progress, Done 3개의 컬럼이 제공되며, 원하는 컬럼을 직접 생성하거나 기존 컬럼의 삭제도 가능합니다.
+컬럼은 현재 일정의 진행 순서를 나타내며, 각각의 컬럼에 사용자는 할 일 카드를 생성하고, 현재 프로젝트의 진행상황을 작성할 수 있습니다.
+- 할 일 카드 목록은 무한스크롤, 컬럼의 생성과 할 일 카드의생성, 할일 카드는 모달로 구현하였습니다.
+- 할 일 카드는 댓글을 통해 대시보드의 멤버들과 소통이 가능하며, 카드 수정과 삭제 기능을 제공합니다. 수정기능을 사용 시 현재 진행중인 상황의 담당자, 컬럼명(진행 순서), 제목, 태그 등 상세 내용의 수정이 가능합니다.
+![대시보드 페이지](https://github.com/jeongseongwon94/Taskify-Web/assets/148832721/ef59372c-f63e-4759-b1cf-e4d9736f1f1a)
+![할일카드 생성](https://github.com/jeongseongwon94/Taskify-Web/assets/148832721/54380871-a898-4851-a42f-951588630087)
+![카드수정](https://github.com/jeongseongwon94/Taskify-Web/assets/148832721/3c899f36-4985-48cd-8407-28b008ad772b)
 ---
 
 
-### answer page
-
-- 상담가는 로그인을 하여 자신에 페이지에 들어오면, 총 몇 개의 질문이 달렸는지 확인 할 수 있습니다.
-- 답변하고 싶지 않다면 케밥 버튼을 눌러 답변 거절 버튼을 누르면, 답변 거절로 표시됩니다.
-- 케밥 버튼의 기능에는 답변거절, 삭제하기, 수정하기가 있습니다.
-- 답변을 달기 전에는 답변거절, 삭제하기 기능만이 나타나고, 답변이 달린 질문에는 수정하기, 삭제하기 기능만이 나타나도록 구현하였습니다.
-- 기본적으로 답변이 달리지 않은 질문에는 답변을 입력할 수 있는 창이 활성화되어 있고, 답변을 입력하고 답변 완료 버튼을 누르면 답변이 등록됩니다.
-- 답변이 등록되면 미답변 상태의 배지가 답변 완료로 바뀌고, 현재를 기준으로 언제 답변이 생성되었는지 표시됩니다.
-- 상단의 전체 삭제 버튼을 눌러 등록된 모든 질문과 답변을 삭제할 수 있습니다.
-
-![answerpage](https://github.com/SprintPart2Team10/openmind/assets/141597336/b48cf118-c4c7-4a82-987b-9bdb72bb3754)
-
+### 대시보드 관리 페이지
+- 대시보드의 색상, 이름을 변경할 수 있습니다. 대시보드의 구성원과 초대 목록을 관리할 수 있으며, 대시보드의 삭제 또한 가능합니다.
+- 대시보드의 구성원과 초대목록은 페이지네이션으로 구현하였습니다.
+![대시보드 관리 페이지](https://github.com/jeongseongwon94/Taskify-Web/assets/148832721/e05fb353-abf2-4828-96e7-7e00b416a711)
 ---
 
 
-### 404 not found page
-- 유저가 잘못된 도메인을 입력하는 등 잘못된 경로 등으로 없는 페이지에 접근할 경우, 홈페이지로 돌아갈 수 있도록 유도하는 페이지입니다.
-
-![notfound](https://github.com/SprintPart2Team10/openmind/assets/141597336/cfa9b7fb-f59d-4392-a3cf-d9d1efedf89a)
+### 내 정보 페이지
+- 사용자의 프로필이미지, 닉네임, 비밀번호를 변경할 수 있습니다.
+- 이메일의 변경기능은 제공하지 않으며, 프로필이미지와 닉네임을 변경 후 저장 버튼을 클릭하면 실시간 반영됩니다.
+- 새 비밀번호와 확인란을 작성 하면 비밀번호 변경 버튼이 활성화됩니다.
+- 비밀번호 입력칸 우측에 위치한 눈동자 아이콘을 클릭하면 작성중인 비밀번호의 숨김을 on/off할 수 있습니다.
+![내 정보 페이지](https://github.com/jeongseongwon94/Taskify-Web/assets/148832721/ae1c4300-6948-4ae7-abb8-13831ae3569d)
 
 
 ## Contributor
-#### [Chyyni](https://github.com/Chyyni)
-- 프로젝트 초기 세팅
-- 메인 페이지, 404 페이지 구현
-- 공통 컴포넌트 - InputField, Badge, Button/Box
-
 #### [jeongseongwon94](https://github.com/jeongseongwon94)
-- vercel 배포
-- list 페이지 구현
-- 공통 컴포넌트 - Dropdown, Button/Box
+- 내 대시보드 페이지 구현
+- 할일 생성/수정 모달 구현
+- 메인/서브 헤더 구현
+#### [nakyoung98](https://github.com/nakyoung98)
+- 대시보드 페이지 구현
+- 사이드바 구현
+- 컬럼 관리 모달 구현
+- 컬럼 provider 구현
 
-#### [9ummy9](https://github.com/9ummy9)
-- modal 구현
-- 전체 페이지 디자인
-- 공통 컴포넌트 - Button/Box, Button/Share, Toast
+#### [SeanKim-416](https://github.com/SeanKim-416)
+- 메인페이지 구현
+- 내 정보 페이지 구현
+- 대시보드 관리 페이지 구현
+- 대시보드 provider 구현
+- 대시보드 생성 모달 구현
 
-#### [ccwnc](https://github.com/ccwnc)
-- post 페이지 구현
-- 공통 컴포넌트 -  Input Text area, Reaction, Button/Floating
+#### [muyahho](https://github.com/muyahho)
+- 색상 칩 컴포넌트 구현
+- 주제 칩 컴포넌트 구현
 
-#### [uzleem](https://github.com/uzleem)
-- answer 페이지 구현
-- 공통 컴포넌트 - pagenation, user card
+#### [dahee0401](https://github.com/dahee0401)
+- 캘린더 컴포넌트 구현
