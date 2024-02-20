@@ -47,7 +47,7 @@
 <img src="https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white">
 
 ## 페이지별 기능 소개
-### 메인 페이지, 회원가입, 로그인 페이지
+### 메인 페이지
 - 메인 페이지는 간단한 사이트 소개와 회원가입/로그인 페이지의 이동 기능을 제공합니다.
 ![메인페이지](https://github.com/jeongseongwon94/Taskify-Web/assets/148832721/cd13787c-fbf6-46a8-8697-d30c12436136)
 ---
