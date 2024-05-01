@@ -16,25 +16,24 @@
 <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"> <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=Sass&logoColor=white"> <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=white"> <img src="https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white">
 
 ## 담당 제작 기능
-- 내 대시보드 페이지 개발
-  - 내 대시보드 목록 페이지네이션 기능 구현
-  - 초대받은 대시보드 목록 무한스크롤 기능 구현
-  - 초대받은 대시보드 수락/거절 기능 구현
-  - 초대받은 대시보드 검색 기능 구현
-- 대시보드 페이지 개발
-  - 할일 생성/수정 모달 기능 구현
-  - 컬럼 추가 모달 기능 구현
+- 내 대시보드 페이지 개발 (사용자가 생성한 대시보드와 초대받은 대시보드 목록을 확인하는 페이지)
+    - 내 대시보드 목록 페이지네이션 기능 구현
+    - 초대받은 대시보드 목록 무한스크롤 기능 구현
+    - 초대받은 대시보드 목록 초대/거절 기능 구현
+    - 초대받은 대시보드 목록 검색 기능 구현
+- 대시보드 페이지 개발 (대시보드 내 일정을 확인하는 페이지)
+    - 컬럼 추가, 할일 생성/수정 모달창 구현 (컴포넌트 재사용을 통한 사용자 입력 폼 구현)
 
 <img width="863" alt="image" src="https://github.com/jeongseongwon94/Taskify-Web/assets/148832721/c8b12c53-6b70-4cba-9249-db59e4a05106">
-<img width="863" alt="image" src="https://github.com/Team-Taskify/Taskify-Web/assets/148832721/abc338c9-85df-49a2-9224-ebc02d3ab935">
+<img width="863" alt="image" src="https://github.com/jeongseongwon94/Taskify-Web/assets/148832721/cb6843bd-63db-4354-985d-4c5820891e20">
 
 ## 트러블 슈팅
-- map 함수 key 값 오류<br/>
-고유한 id값이 없어 태그의 이름을 id로 적용하였으나, 이름이 중복되는 태그가 작성되면 id 에러 발생 <br/> → 이름이 중복되는 태그를 생성하지 못하도록 alert창을 표시하고 return하는것으로 수정
-- 생성모달에서 수정모달의 데이터가 적용되는 문제<br/>
-생성 모달과 수정 모달을 동일한 컴포넌트에서 동작하도록 구현하였으나, 수정모달에서 입력된 데이터가 생성 모달에서도 적용됨<br/> → 생성모달과 수정모달을 구분하여 생성모달인 상태에는 기존 데이터를 useEffect에서 초기화하도록 수정<br/>
+- 특정 이름을 입력하여 태그를 생성할 때 빈 배열에 태그 이름을 추가하여 map함수로 렌더링 하였는데,  이름이 중복되는 태그가 작성되면 key warning 에러 발생
+    - 이름이 중복되는 태그를 생성하지 못하도록 alert창을 표시하고 return하는것으로 해결하였다.
+- 공통 컴포넌트로 구현한 모달창에서 다른 모달 창에서 입력된 데이터가 동일하게 적용되는 문제 발생
+    - 각각의 모달창을 구분하여 기존 데이터가 불필요한 모달창에서는  useEffect에서 초기화하도록 수정하여 해결하였다.<br/>
+
 [관련 PR 링크](https://github.com/Team-Taskify/Taskify-Web/pull/150)
-  
 
 ## 배포 링크
 - [LINK](https://taskify-jsw.vercel.app)
